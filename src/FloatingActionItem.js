@@ -51,15 +51,14 @@ class FloatingActionItem extends Component {
       textColor,
       textStyle,
       textProps,
-      textContainerStyle,
-      shadow
+      textContainerStyle
     } = this.props;
 
     if (elevation !== undefined) {
       console.warn(
         'FloatingActionItem: "elevation" property was deprecated. Please use "textElevation"'
       );
-    }
+    }s
 
     if (text) {
       return (
@@ -75,7 +74,6 @@ class FloatingActionItem extends Component {
                 height: textElevation || elevation
               }
             },
-            shadow,
             textContainerStyle
           ]}
         >
@@ -294,7 +292,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 14,
-    lineHeight: 20
+    lineHeight: 20,
+    fontWeight: '600',
   },
   button: {
     alignItems: "center",
