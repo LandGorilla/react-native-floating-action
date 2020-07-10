@@ -69,10 +69,7 @@ class FloatingActionItem extends Component {
             styles[`${position}TextContainer`],
             {
               backgroundColor: textBackground,
-              elevation: textElevation || elevation,
-              shadowOffset: {
-                height: textElevation || elevation
-              }
+              elevation: textElevation || elevation
             },
             textContainerStyle
           ]}
@@ -293,7 +290,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 14,
     lineHeight: 20,
-    fontWeight: '600',
+    fontWeight: 'bold',
   },
   button: {
     alignItems: "center",
