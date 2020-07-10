@@ -58,7 +58,7 @@ class FloatingActionItem extends Component {
       console.warn(
         'FloatingActionItem: "elevation" property was deprecated. Please use "textElevation"'
       );
-    }s
+    }
 
     if (text) {
       return (
